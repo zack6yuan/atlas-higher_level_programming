@@ -3,6 +3,8 @@
 ## OP1000 - Foundations of Object-Oriented Programming
 Python - Hello World
 
+github.com/zack6yuan/atlas-higher_level_programming/python-hello_world
+
 Python - If/else, Loops, Functions
 
 Python - Import & Modules
