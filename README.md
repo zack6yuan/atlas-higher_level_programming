@@ -1,7 +1,7 @@
 # Atlas Higher Level Programming
 
 ## OP1000 - Foundations of Object-Oriented Programming
-Python - Hello World [Directory](github.com/zack6yuan/atlas-higher_level_programming/python-hello_world)
+Python - Hello World
 
 Python - If/else, Loops, Functions
 
