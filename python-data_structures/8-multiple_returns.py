@@ -6,4 +6,3 @@ def multiple_returns(sentence):
     else:
         y = None
     return (x, y)
-    
