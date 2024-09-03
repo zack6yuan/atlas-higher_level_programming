@@ -2,6 +2,7 @@
 def list_division(my_list_1, my_list_2, list_length):
     div_list = []
     for i in range(list_length):
+        quo = 0
         try:
             quo = my_list[1] / my_list[2]
         except ZeroDivisionError:
