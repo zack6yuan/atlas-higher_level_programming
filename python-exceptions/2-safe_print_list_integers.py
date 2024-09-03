@@ -7,8 +7,5 @@ def safe_print_list_integers(my_list=[], x=0):
             int_count +=1
         except (TypeError, ValueError):
             continue
-        if (IndexError):
-            print("IndexError: list index out of range")
-            break
         print()
         return (int_count)
