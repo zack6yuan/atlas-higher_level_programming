@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This is a module that creates a square with instintation "size" """
+""" Module that defines a class "square" with instintation "size" """
 
 
 class Square:
