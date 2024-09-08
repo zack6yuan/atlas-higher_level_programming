@@ -18,7 +18,7 @@ def size(self, value):
     """ Sets the size of the square """
     """ Raises Type Error: if size is not type "int" """
     """ Raises ValueError: if size < 0 """
-    if not isinstance(value, int)
+    if not isinstance(value, int):
         raise TypeError("size must be an integer")
     elif (size < 0):
         raise ValueError("size must be >= 0")
