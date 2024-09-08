@@ -7,9 +7,8 @@ class Square:
     def __init__(self, size=0):
         """ Raises ValueError: if size < 0 """
         """ Raises Type Error: if size is not type "int" """
-        if (size < 0):
-            raise ValueError("size must be >= 0")
-        elif type(size) is not int:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        else:
-            self.__size = size 
+        elif (size < 0):
+            raise ValueError("size must be >= 0")
+        self.__size = size 
