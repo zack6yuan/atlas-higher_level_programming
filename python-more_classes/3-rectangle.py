@@ -60,9 +60,9 @@ class Rectangle:
         if ((self.width == 0) or (self.height == 0)):
             return "" # empty string
         rec_str = ""
-            for x in range(self.__height):
-                for y in range(self.__width):
-                    str += "#"
-                if x < self.__height - 1:
-                    str += "\n"
-            return (rec_str)
+        for x in range(self.__height):
+            for y in range(self.__width):
+                str += "#"
+            if x < self.__height - 1:
+                str += "\n"
+        return (rec_str)
