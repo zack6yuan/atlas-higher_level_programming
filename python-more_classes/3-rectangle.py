@@ -62,7 +62,7 @@ class Rectangle:
         rec_str = ""
         for x in range(self.__height):
             for y in range(self.__width):
-                str += "#"
+                rec_str += "#"
             if x < self.__height - 1:
-                str += "\n"
+                rec_str += "\n"
         return (rec_str)
