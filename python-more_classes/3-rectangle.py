@@ -19,7 +19,7 @@ class Rectangle:
         """ Method: Sets the width of the rectangle """
         """ Raises TypeError: if width is not type "int" """
         """ Raises ValueError: if (width < 0) """
-        if isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif (value < 0):
             raise ValueError("width must be >= 0")
@@ -35,7 +35,7 @@ class Rectangle:
         """ Method: Sets the height of the rectangle """
         """ Raises TypeError: if height is not type "int" """
         """ Raises ValueError: if (height < 0) """
-        if isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif (value < 0):
             raise ValueError("height must be >= 0")
@@ -58,6 +58,7 @@ class Rectangle:
         """ Retrieves the character to print with the rectangle """
         if ((self.width == 0) or (self.height == 0)):
             return "" # empty string
+            str = ""
             for x in range(self.__height):
                 for y in range(self.__width):
                     str += "#"
