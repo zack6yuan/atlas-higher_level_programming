@@ -8,7 +8,7 @@ class Rectangle:
         """ New rectangle is created """
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """ Method: Retrieves the width of the rectangle """
@@ -58,7 +58,7 @@ class Rectangle:
         """ Retrieves str of rectangle """
         """ Returns str of rectangle """
         if ((self.width == 0) or (self.height == 0)):
-            return "" # empty string
+            return ""  # empty string
         rec_str = ""
         for x in range(self.__height):
             for y in range(self.__width):
