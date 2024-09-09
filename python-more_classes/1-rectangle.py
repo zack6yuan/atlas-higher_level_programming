@@ -10,12 +10,12 @@ class Rectangle:
         """ New rectangle is created """
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """ Retrieves the width of the rectangle """
         return (self.__width)
-    
+
     @width.setter
     def width(self, value):
         """ Sets the width of the rectangle """
