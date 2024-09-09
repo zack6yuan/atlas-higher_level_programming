@@ -55,13 +55,14 @@ class Rectangle:
             return (self.__width + self.__height) * 2
 
     def __str__(self):
-        """ Retrieves the character to print with the rectangle """
+        """ Retrieves str of rectangle """
+        """ Returns str of rectangle """
         if ((self.width == 0) or (self.height == 0)):
             return "" # empty string
-            str = ""
+        rec_str = ""
             for x in range(self.__height):
                 for y in range(self.__width):
                     str += "#"
                 if x < self.__height - 1:
                     str += "\n"
-            return (str)
+            return (rec_str)
