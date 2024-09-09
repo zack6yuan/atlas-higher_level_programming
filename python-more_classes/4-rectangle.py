@@ -15,6 +15,7 @@ class Rectangle:
         return (self.__width)
 
     @width.setter
+    def width(self, value):
         """ Method: Sets the width of the rectangle """
         """ Raises TypeError: if width is not type "int" """
         """ Raises ValueError: if (width < 0) """
@@ -31,6 +32,7 @@ class Rectangle:
         return (self.__height)
 
     @height.setter
+    def height(self, value):
         """ Method: Sets the height of the triangle """
         """ Raises TypeError: if height is not type "int" """
         """ Raises ValueError: if (value < 0) """
