@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module that returns "True" is the object is an instance of a 
+""" Module that returns "True" is the object is an instance of a
 class that inherited from, the specified class, else "False" """
 
 
