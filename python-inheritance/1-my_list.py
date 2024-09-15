@@ -4,6 +4,6 @@
 
 class MyList(list):
     """ class "MyList, inherits from "list" """
-        def print_sorted(self):
-            """ Method: prints ascending list of type "int"'s """
-            print(sorted(self))
+    def print_sorted(self):
+        """ Method: prints ascending list of type "int"'s """
+        print(sorted(self))
