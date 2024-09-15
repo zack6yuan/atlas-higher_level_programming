@@ -2,6 +2,6 @@
 """ Module that defines a class "BaseGeometry" """
 
 
-class BaseGeomerty:
+class BaseGeometry:
     """ Method: empty for now """
     pass
