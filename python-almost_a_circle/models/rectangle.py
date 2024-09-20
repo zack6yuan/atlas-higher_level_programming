@@ -64,7 +64,7 @@ class Rectangle(Base):
             self.__height = height
 
         @x.setter
-        def x(self, value)
+        def x(self, value):
             """ Sets the x-coordinate of the rectangle """
             if not isinstance(value, int):
                 raise TypeError("x must be an integer")
@@ -73,7 +73,7 @@ class Rectangle(Base):
             self.__x = value
 
         @y.setter
-        def y(self, value)
+        def y(self, value):
             """ Sets the y-coordinate of the rectangle """
             if not isinstance(value, int):
                 raise TypeError("y must be an integer")
