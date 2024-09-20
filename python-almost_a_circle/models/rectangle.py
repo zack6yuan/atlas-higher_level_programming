@@ -87,7 +87,7 @@ class Rectangle(Base):
         Returns the area of the rectangle """
         return (self.__width * self.__height)
 
-    def display(self):
+    def display(self): # in progress
         """ Method: prints in stdout the Rectangle
         instance with the character "#" """
 
@@ -95,3 +95,13 @@ class Rectangle(Base):
         """ Method: returns rectangle properties according to format """
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height))
+
+    def update(self, *args):
+        """ Method: assigns arguments to each attribute
+
+        Attributes:
+            1st argument: (id) attribute
+            2nd argument: (width) attribute
+            3rd argument: (height) attribute
+            4th argument: (x) attribute
+            5th argument: (y) attribute
