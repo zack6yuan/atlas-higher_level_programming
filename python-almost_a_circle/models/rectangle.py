@@ -39,7 +39,7 @@ class Rectangle(Base):
             Returns the x-coordinate of the rectangle """
             return (self.__x)
 
-        @property:
+        @property
         def y(self):
             """ Retrieves the y-coordinate of the rectangle
             Returns the y-coordinate of the rectangle """
