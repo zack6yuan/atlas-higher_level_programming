@@ -20,3 +20,27 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
+
+        @property
+        def width(self):
+            """ Retrieves the width of the rectangle
+            Returns the width of the rectangle """
+            return self.__width
+
+        @property
+        def height(self):
+            """ Retrieves the height of the rectangle
+            Returns the height of the rectangle """
+            return self.__height
+
+        @property
+        def x(self):
+            """ Retrieves the x-coordinate of the rectangle
+            Returns the x-coordinate of the rectangle """
+            return self.__x
+
+        @property:
+        def y(self):
+            """ Retrieves the y-coordinate of the rectangle
+            Returns the y-coordinate of the rectangle """
+            return self.__y
