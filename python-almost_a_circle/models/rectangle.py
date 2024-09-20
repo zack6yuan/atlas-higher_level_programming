@@ -90,3 +90,8 @@ class Rectangle(Base):
     def display(self):
         """ Method: prints in stdout the Rectangle
         instance with the character "#" """
+
+    def __str__(self):
+        """ Method: returns rectangle 
+        properties according to format """
+        return ("[Rectangle] {} {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
