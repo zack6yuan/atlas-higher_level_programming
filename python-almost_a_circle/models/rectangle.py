@@ -13,7 +13,7 @@ class Rectangle(Base):
             (height) type "int" representing rectangle height
             (x) type "int" representing x-coordinate of position
             (y) type "int" representing y-coordinate of position
-            (id) used to call super class
+            (id) used to call __init__ logic from super class
         """
         super().__init__(id)
         self.width = width
@@ -25,22 +25,22 @@ class Rectangle(Base):
         def width(self):
             """ Retrieves the width of the rectangle
             Returns the width of the rectangle """
-            return self.__width
+            return (self.__width)
 
         @property
         def height(self):
             """ Retrieves the height of the rectangle
             Returns the height of the rectangle """
-            return self.__height
+            return (self.__height)
 
         @property
         def x(self):
             """ Retrieves the x-coordinate of the rectangle
             Returns the x-coordinate of the rectangle """
-            return self.__x
+            return (self.__x)
 
         @property:
         def y(self):
             """ Retrieves the y-coordinate of the rectangle
             Returns the y-coordinate of the rectangle """
-            return self.__y
+            return (self.__y)
