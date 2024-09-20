@@ -7,7 +7,6 @@ class Rectangle(Base):
     """ Class "Rectangle" that inherits from "Base" class """
     def __init__(self, width, height, x=0, y=0, id=None):
         """ Method: Initialize Rectangle class
-
         Attributes:
             (self) reference to new object
             (width) type "int" representing rectangle width
