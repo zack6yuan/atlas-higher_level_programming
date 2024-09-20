@@ -65,7 +65,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-         """ Sets the x-coordinate of the rectangle """
+        """ Sets the x-coordinate of the rectangle """
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if (x < 0):
