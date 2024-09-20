@@ -92,7 +92,7 @@ class Rectangle(Base):
         instance with the character "#" """
 
     def __str__(self):
-        """ Method: returns rectangle 
+        """ Method: returns rectangle
         properties according to format """
         return ("[Rectangle] ({}) {}/{} - {}/{}".format\
-        (self.id, self.x, self.y, self.width, self.height))
+            (self.id, self.x, self.y, self.width, self.height))
