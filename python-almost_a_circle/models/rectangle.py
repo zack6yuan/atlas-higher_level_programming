@@ -6,7 +6,7 @@ from models.base import Base
 class Rectangle(Base):
     """ Class "Rectangle" that inherits from "Base" class """
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ Initialize Rectangle class
+        """ Method: Initialize Rectangle class
 
         Attributes:
             (self) reference to new object
@@ -24,31 +24,31 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """ Retrieves the width of the rectangle
+        """ Method: Retrieves the width of the rectangle
         Returns the width of the rectangle """
         return (self.__width)
 
     @property
     def height(self):
-        """ Retrieves the height of the rectangle
+        """ Method: Retrieves the height of the rectangle
         Returns the height of the rectangle """
         return (self.__height)
 
     @property
     def x(self):
-        """ Retrieves the x-coordinate of the rectangle
+        """ Method: Retrieves the x-coordinate of the rectangle
         Returns the x-coordinate of the rectangle """
         return (self.__x)
 
     @property
     def y(self):
-        """ Retrieves the y-coordinate of the rectangle
+        """ Method: Retrieves the y-coordinate of the rectangle
         Returns the y-coordinate of the rectangle """
         return (self.__y)
 
     @width.setter
     def width(self, value):
-        """ Sets the width of the rectangle """
+        """ Method: Sets the width of the rectangle """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if (value <= 0):
@@ -57,7 +57,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """ Sets the height of the rectangle """
+        """ Method: Sets the height of the rectangle """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if (value <= 0):
@@ -66,7 +66,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """ Sets the x-coordinate of the rectangle """
+        """ Method: Sets the x-coordinate of the rectangle """
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if (value < 0):
@@ -75,7 +75,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """ Sets the y-coordinate of the rectangle """
+        """ Method: Sets the y-coordinate of the rectangle """
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if (value < 0):
@@ -83,6 +83,10 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """ Retrieves the area of the rectangle
+        """ Method: Retrieves the area of the rectangle
         Returns the area of the rectangle """
         return (self.__width * self.__height)
+
+    def display(self):
+        """ Method: prints in stdout the Rectangle
+        instance with the character "#" """
