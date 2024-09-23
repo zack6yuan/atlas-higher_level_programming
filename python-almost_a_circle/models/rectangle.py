@@ -90,7 +90,10 @@ class Rectangle(Base):
         """ Method: prints in stdout the Rectangle
         instance with the character "#" """
         for y in range(self.y):
-            print()
+            print("")
+        for row in range(self.__height)
+            print("", end="")
+            print("#", end="")
 
     def __str__(self):
         """ Method: returns rectangle properties according to format """
