@@ -91,7 +91,7 @@ class Rectangle(Base):
         instance with the character "#" """
         for y in range(self.y):
             print("")
-        for row in range(self.__height)
+        for row in range(self.__height):
             print("", end="")
             print("#", end="")
 
