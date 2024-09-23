@@ -89,6 +89,8 @@ class Rectangle(Base):
     def display(self): # in progress
         """ Method: prints in stdout the Rectangle
         instance with the character "#" """
+        for y in range(self.y):
+            print()
 
     def __str__(self):
         """ Method: returns rectangle properties according to format """
@@ -104,3 +106,5 @@ class Rectangle(Base):
             3rd argument: (height) attribute
             4th argument: (x) attribute
             5th argument: (y) attribute
+        """
+    
