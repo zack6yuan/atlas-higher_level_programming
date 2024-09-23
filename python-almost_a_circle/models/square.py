@@ -17,9 +17,10 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
         self.size = size
-        self.x = x
-        self.y = y
-        self.id = None
+
+    def __str__(self):
+        """ Method: method that overloads
+        and returns according to format"""
 
     @property
     def size(self):
