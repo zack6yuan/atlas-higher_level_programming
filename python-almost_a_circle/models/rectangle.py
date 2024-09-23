@@ -110,6 +110,7 @@ class Rectangle(Base):
             4th argument: (x) attribute
             5th argument: (y) attribute
         """
+        pass
 
     def to_dictionary(self):
         """ Method: returns the dictionary
