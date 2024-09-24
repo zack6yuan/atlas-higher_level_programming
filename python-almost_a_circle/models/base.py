@@ -26,12 +26,17 @@ class Base:
     def save_to_file(cls, list_objs):
         """ Method: writes the JSON representation
         of "list_obj"s" to a file"""
-    file = "{}.json".format(cls.__name)
-    with open(file, "w") as jsonfile:
+        file = "{}.json".format(cls.__name)
+            with open(file, "w") as jsonfile:
         if (list_objs) is None:
             jsonfile.write("[]")
-        else:
 
-
-
-
+    def create(cls, **dictionary):
+        """ Method: returns an instance
+        with all attributes already set """
+        if cls.__name == "Rectangle":
+            instance = cls(1, 1)
+        if cls.__name = "Square":
+            instance = cls(1)
+        instance.update(**dictionary)
+        return (instance)
