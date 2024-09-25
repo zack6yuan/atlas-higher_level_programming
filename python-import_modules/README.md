@@ -64,6 +64,6 @@ The __name__ variable is a built-in variable that holds the name of the current 
 ## How to use command line arguments with your Python programs
 Command line arguments are values passed to a Python script when it's executed from the command line. They can be used to provide input data, configure the script's behavior, or customize its output.
 
-Using the sys module:
+### Using the sys module:
 
 The sys module provides access to system-specific parameters and functions. To use command line arguments, you can import the sys module and access the argv attribute, which is a list containing the command-line arguments.
