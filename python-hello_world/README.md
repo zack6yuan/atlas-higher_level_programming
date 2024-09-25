@@ -1,4 +1,4 @@
-# 🐍 Python - Hello, World ![image](https://github.com/user-attachments/assets/3b71dd5a-db97-4c30-9b8e-cdc65d670f22)
+# 🐍 Python - Hello, World
 
 Welcome to the Python World!
 
