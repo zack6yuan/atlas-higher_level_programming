@@ -1,4 +1,4 @@
-# Python - Hello, World
+# 🐍 Python - Hello, World
 Welcome to the Python World!
 
 # Learning Objectives
