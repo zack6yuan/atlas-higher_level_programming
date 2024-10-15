@@ -14,7 +14,7 @@ if __name__ == "__main__":
         password = second argument
         database name = third argument
     """
-    db = MySQL.connect(
+    db = MySQLdb.connect(
         user=sys.argv[1],
         password=sys.argv[2],
         db=sys.argv[3]
