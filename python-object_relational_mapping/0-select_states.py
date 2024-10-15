@@ -4,8 +4,8 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    """ 
-        Method: 
+    """
+        Method:
             list all states from database
         Attributes:
             username = first argument
