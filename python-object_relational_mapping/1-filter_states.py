@@ -18,8 +18,8 @@ if __name__ == "__main__":
         user=sys.argv[1],
         password=sys.argv[2],
         db=sys.argv[3]
-    ) # connect to MySQL database.
-    cursor = db.cursor() # create cursor object=
+    )  # connect to MySQL database.
+    cursor = db.cursor()  # create cursor object
     cursor.execute("SELECT * FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC")
     states = cursor.fetchall()
     for state in states:
