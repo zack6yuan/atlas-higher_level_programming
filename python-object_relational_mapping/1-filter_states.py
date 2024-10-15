@@ -13,6 +13,14 @@ if __name__ == "__main__":
         database name = third argument
     """
     db = MySQL.connect(
-        host="localhost"
-        
-    )
+        host="localhost".
+        port=3306,
+        user=sys.argv[1],
+        password=sys.argv[2],
+        db=sys.argv[3]
+    ) # connect to MySQL database.
+    cursor = db.cursor() # create cursor object=
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    states = cursor.fetchall()
+    for state in states:
+        print(state)
