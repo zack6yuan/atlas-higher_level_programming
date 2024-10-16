@@ -4,7 +4,7 @@ and an instance Base = declarative_base() """
 from sqlalchemy import Integer  # used for integer columns
 from sqlalchemy import Column  # used to create columns
 from sqlalchemy import String  # defines string columns
-from sqlalchemy.ext.declarative import  # used to create base class
+from sqlalchemy.ext.declarative import declarative_base  # used to create base class
 
 Base = declarative_base()
 
