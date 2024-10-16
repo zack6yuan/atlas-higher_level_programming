@@ -9,15 +9,21 @@ if __name__ == "__main__":
     Method:
         list all states that are in the states table
     Attributes:
-        username = 
-        password = 
-        database name = 
-        state name searched = 
+        username = first argument
+        password = second argument
+        database name = third argument
+        state name searched = fourth argument
     """
-    db = MySQLdb.connect(
+    db = MySQLdb.connect (
+        host="localhost",
+        port=3306,
         user=sys.argv[1],
         password=sys.argv[2]
         db=sys.argv[3],
-    ) # connect to MySQL database.
+        state_name=sys.argv[4]
+    )  # connect to MySQL database.
     cursor = db.cursor()
-    cursor.execute()
+    cursor.execute("SELECT * FROM states WHERE BINARY name = '{}' ORDER BY id ASC".format(sys.argv[4]))
+    states = cursor.fetchall()
+    for state in states:
+        print(states)
