@@ -1,8 +1,8 @@
 #!/usr/bin/node
-if (args.length == 0) {
-    console.log('No argument');
-} else if (args.length == 1) {
+if (arguments.length > 1) {
+    console.log('Arguments found');
+} else if (arguments.length === 1) {
     console.log('Argument found');
 } else {
-    console.log('Arguments found');
+    console.log('No arguments');
 }
