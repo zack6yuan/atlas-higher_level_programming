@@ -7,4 +7,4 @@ exports.esrever = function (list) {
     reverse[x] = list[list.length - 1 - x];
   }
   return reverse;
-}
+};
