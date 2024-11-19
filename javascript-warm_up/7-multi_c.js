@@ -1,5 +1,7 @@
 #!/usr/bin/node
 // Node.js script that prints x times "C is fun"
-const phrase = 'C is fun';
-const iterations = 0;
-for (let iterations = 0; x )
+const message = 'C is fun';
+let iterations = parseInt(process.argv[2]);
+for (let x = 0; x < iterations; x++) {
+  console.log(message);
+}
