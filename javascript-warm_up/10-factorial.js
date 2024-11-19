@@ -8,5 +8,4 @@ function getFactorial(value) {
     return value * getFactorial(value - 1);
   }
 }
-console.log(getFactorial(value))
- 
+console.log(getFactorial(value));
