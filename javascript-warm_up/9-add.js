@@ -7,5 +7,4 @@ function add(a, b) {
   return (a + b);
 }
 
-let sum = a + b;
-console.log(sum);
+console.log(add(a, b));
