@@ -1,6 +1,4 @@
 #!/usr/bin/node
 // Node.js script that prints two arguments.
-const city = 'Tulsa';
-const word = 'cool';
-const phrase = `${city} is ${word}`;
+const phrase = `${process.argv[2]} is ${process.argv[3]}`;
 console.log(phrase);
