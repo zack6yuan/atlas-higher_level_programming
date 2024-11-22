@@ -3,7 +3,7 @@
 // Use file system module for operations.
 const fs = require('fs');
 const file_name = process.argv[2];
-fs.readFIle(file_name, 'utf-8', (err, data) => {
+fs.readFile(file_name, 'utf-8', (err, data) => {
   if (err) {
     // print error object.
     console.log(err);
