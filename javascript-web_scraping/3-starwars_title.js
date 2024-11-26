@@ -9,7 +9,7 @@ getRequest(api, (err, response, body) => {
   if (err) {
     console.log(err);
   } else {
-    const json_data = JSON.parse(body);
-    console.log(json_data.title);
+    const jsonData = JSON.parse(body);
+    console.log(jsonData.title);
   }
 });
