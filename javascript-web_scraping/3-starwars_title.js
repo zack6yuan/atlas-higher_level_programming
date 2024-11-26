@@ -3,11 +3,13 @@
 Star Wars movie where the episode number
 matches a given integer */
 const getRequest = require('request');
+// Build the URL for the data. + (First argument)
 let api = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
 getRequest(api, (err, response, body) => {
   if (err) {
     console.log(err);
   } else {
-    
+    let json_data = JSON.parse(body);
+    console.log(json_data.title);
   }
 });
