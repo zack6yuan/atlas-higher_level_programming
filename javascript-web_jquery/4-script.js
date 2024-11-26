@@ -3,4 +3,4 @@
 // Using the JQuery API (onclick(DIV#toggle_header)).
 $('DIV#toggle_header').click(function () {
   $('header').toggleClass('red green');
-})
+});
