@@ -13,6 +13,9 @@ getRequest(url, (error, response, body) => {
     fs.writeFile(path, body, 'utf-8', (err) => {
       if (err) {
         console.log(err);
+      } else {
+        const jsonData = JSON.parse(data);
+        console.log(jsonData);
       }
     });
   }
