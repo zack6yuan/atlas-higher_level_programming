@@ -7,12 +7,12 @@ const fs = require('fs')
 const url = process.argv[2];
 const path = process.argv[3];
 getRequest(url, (error, response, body) => {
-  if (err) {
-    console.log(err);
+  if (error) {
+    console.log(error);
   } else {
     fs.writeFile(path, body, 'utf-8', (err) => {
-      if (err) {
-        console.log(err);
+      if (error) {
+        console.log(error);
       } else {
         const jsonData = JSON.parse(data);
         console.log(jsonData);
